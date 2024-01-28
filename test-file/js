@@ -1,0 +1,11 @@
+ const car3 = data[2];
+    
+    const car3Img = car3.imageURL;
+    const car3Name = car3.name;
+    const car3Details = car3.description;
+    const car3Price = car3.price;
+
+    document.getElementById('car3-pic').src = car3Img;
+    document.getElementById('car3-name').innerText = car3Name;
+    document.getElementById('car3-details').innerText = car3Details;
+    document.getElementById('car3-price').innerText = car3Price;
