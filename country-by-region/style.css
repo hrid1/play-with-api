@@ -1,0 +1,30 @@
+body {
+    background: #4c4b56;
+    color: white;
+}
+
+.head-section{
+    text-align: center;
+}
+
+#country-div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.each-country-div{
+    background-color: rgb(68, 66, 66);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+#select-region{
+    
+    padding: 10px;
+    margin: 5px;
+    font-weight: 700;
+}
