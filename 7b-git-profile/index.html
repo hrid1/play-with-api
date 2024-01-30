@@ -10,11 +10,11 @@
 </head>
 <body class="">
     
-    <main class="flex bg-blue-950 p-10 gap-5 text-white h-screen">
+    <main class="flex bg-slate-900 p-10 gap-5 text-white h-screen">
         <!-- profile pic -->
         <div class="w-1/5 mt-5">
 
-            <img src="https://janeliascicomp.github.io/jrc_intro_programming/git/assets/img/codercat.jpg" alt="" class="object-cover rounded-full w-52">
+            <img src="https://janeliascicomp.github.io/jrc_intro_programming/git/assets/img/codercat.jpg" alt="" class="object-cover rounded-full w-52" id="pic-id">
         
         </div>
     
@@ -23,29 +23,29 @@
             <!-- profile -->
             <div class="flex  justify-between">
                 <div class="">
-                    <h1 class="text-3xl font-semibold">The Octocat</h1>
+                    <h1 class="text-3xl font-semibold" id="name-id">The Octocat</h1>
                     <p class="my-2 text-blue-600"> <a href="">@aoctocat</a></p>
 
-                    <p class="my-4 text-gray-300">This profile has no bio</p>
+                    <p class="my-4 text-gray-300" id="bio-id">This profile has no bio</p>
                 </div>
 
                 <div>
-                    <p>Joined 25 Jan 2013</p>
+                    <p id="joined-date" class="mt-2">Joined 25 Jan 2013</p>
                 </div>
             </div>
             <!-- box -->
-                <div class="p-5 bg-slate-900 rounded-lg flex gap-3">
+                <div class="p-5 bg-slate-950 rounded-lg flex gap-3">
                     <div class="w-1/3">
                         <p class="text-gray-200">Repos</p>
-                        <h1 class="font-semibold text-2xl">8</h1>
+                        <h1 class="font-semibold text-2xl" id="total-repo">8</h1>
                     </div>
                     <div class="w-1/3">
                         <p class="text-gray-200">Followers</p>
-                        <h1 class="font-semibold text-2xl">3938</h1>
+                        <h1 class="font-semibold text-2xl" id="folllowers">3938</h1>
                     </div>
                     <div class="w-1/3">
                         <p class="text-gray-200">Following</p>
-                        <h1 class="font-semibold text-2xl">9</h1>
+                        <h1 class="font-semibold text-2xl" id="following">9</h1>
                     </div>
                 </div>
     
@@ -54,17 +54,17 @@
 
                 <div class="flex gap-3 items-center">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p class="inline">San Francisco</p>
+                    <p class="inline" id="loaction">San Francisco</p>
                 </div>
 
                 <div class="flex gap-3 items-center">
                     <i class="fa-brands fa-twitter"></i>
-                    <p class="inline">Not Available</p>
+                    <p class="inline" id="twitter">Not Available</p>
                 </div>
 
                 <div class="flex gap-3 items-center">
                     <i class="fa-solid fa-link"></i>
-                    <p class="inline">http://github.blog</p>
+                    <p class="inline" id="blog">http://github.blog</p>
                 </div>
 
                 <div class="flex gap-3 items-center">
@@ -79,6 +79,6 @@
         </div>
     </main>
 
-
+    <script src="main.js"></script>
 </body>
 </html>
