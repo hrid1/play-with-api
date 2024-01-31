@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            background:#010127;
+        }
+
+        main {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .search-box{
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dddbe7;
+            padding: 20px;
+            width: 650px;
+            border-radius: 5px 5px 0 0;
+            
+
+        }
+        .search-box input, button{
+            padding: 10px;
+            margin-left: 12px;
+            font-weight: 700;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .heading{
+            color: antiquewhite;
+            font-size: 40px;
+            margin: 15px 0px;
+        }
+        .word-meaning{
+            color: #000042;
+            text-align: left;
+            background-color: #fcfcfc;
+            width: 650px;
+            height: 300px;
+            padding: 20px;
+           
+            border-radius: 0 0 5px 5px;
+        }
+
+        .word-audio{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr{
+            display: inline-block; 
+            width: 580px; 
+            margin-bottom: 2.5px;
+        }
+        .meaning-box{
+            margin-top: 20px;
+        }
+        .meaning-box h3 {
+            color: #686060;
+        }
+        .meaning-box p {
+            margin: 5px;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1 class="heading">DictioNary</h1>
+
+        <div class="search-box">
+            <input id="search-word" type="text">
+            <button onclick="getWord()">Search</button>
+        </div>
+
+        <div class="word-meaning" id="word-meaning-id">
+
+            <!-- <div class="word-audio">
+                <h1>Bad</h1>
+                <h2>Audio</h2>
+            </div>
+            
+            <p>Phonetic: </p>
+
+            <div class="meaning-box">
+                <h4>noun</h4>
+                <h3>Meaning:</h3>
+                <p></p>
+            </div>
+
+            <div class="meaning-box">
+                <h4>adjective</h4>
+                <h3>Meaning:</h3>
+                <p></p>
+            </div> -->
+            
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
