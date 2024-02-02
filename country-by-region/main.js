@@ -18,10 +18,11 @@ const loadCountry = region => {
 }
 
 const parentContainer = document.getElementById('country-div');
-// parentContainer.innerHTML = "";
+// parentContainer.innerHTML = " ";
 
 
 const displayCountry = data =>{
+    parentContainer.innerHTML = " ";
     data.forEach(country => {
        
         const countryPic = country.flags.png;
@@ -40,8 +41,12 @@ const displayCountry = data =>{
     });
 }
 
-//------------------------------------------------------------------------
+//---------------------button call-----------------------
 
-
-
+const getRegion = () => {
+    const region = document.getElementById('select-region');
+    regionText = region.value;
+    console.log(regionText);
+    loadCountry(regionText);
+}
 
