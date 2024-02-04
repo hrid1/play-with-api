@@ -19,8 +19,6 @@ const displayPhone = info => {
     else {
         noPhone.classList.add('d-none');
     }
-
-
     // loop start here
     for(let item of info){
        
@@ -35,16 +33,27 @@ const displayPhone = info => {
                 <p class="card-text">This is a longer card with supporting text below a longer.</p>
             </div>
         </div>
-
         `
         phoneContainer.appendChild(newPhone);
-   
+    };
+    // stop loader
+    loadingAdd(false);
+}
+
+// loading adding section
+const loadingAdd = isOn => {
+    const load = document.getElementById('loader');
+    if(isOn) {
+        load.classList.remove('d-none');
+    }
+    else {
+        load.classList.add('d-none');
     }
 }
 
-
 // get the search data 
 const searchPhone = () => {
+    loadingAdd(true)
     const phoneName = document.getElementById("search-box").value;
     loadPhone(phoneName);
 }
