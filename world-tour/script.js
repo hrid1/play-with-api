@@ -1,14 +1,15 @@
 const loadCountry = () => {
     fetch('https://restcountries.com/v3.1/all')
     .then(res => res.json()
-    .then(data => displayCountry(data)))
+    .then(data => displayCountry(data.slice(0, 12))))
 }
 
 const displayCountry = data => {
     
     const parentDiv = document.getElementById('country-div');
+    parentDiv.innerHTML = '';
 
-    data.slice(0, 20).forEach(country => {
+        data.forEach(country => {
         console.log(country.cca2);
         const newCountry = document.createElement("div");
         newCountry.innerHTML = `
@@ -56,5 +57,19 @@ const displayCountryDetails = data => {
 
 }
 
-loadCountryDetails('BD')
+// show all button 
+
+const showAllCountry = () => {
+
+  // load all the data
+  fetch('https://restcountries.com/v3.1/all')
+    .then(res => res.json())
+    .then(data => displayCountry(data))
+
+
+    // btn hidden
+  const showBtn =document.getElementById('show-all-btn');
+  showBtn.classList.add('hidden');
+
+}
 
