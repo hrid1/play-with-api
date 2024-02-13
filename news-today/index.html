@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html  data-theme="night" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The News</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <header>
+        
+        <div class="navbar bg-base-100 mx-5">
+            <div class="flex-1 gap-2">
+                <button class="btn btn-primary">News</button>
+                <button class="btn btn-primary">Portal</button>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+               
+                  <div class="indicator font-semibold text-xl">
+                    <h1 class="me-3 hover:text-blue-300">News</h1>
+                    <h1 class="me-3 hover:text-blue-300">Blogs</h1>
+
+                    <div class="w-10 rounded-full ">
+                        <img class="rounded-full" alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                      </div>
+                  </div>
+
+                  
+                </div>
+                
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                 
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr class="m-2 border-gray-400 ">
+    </header>
+
+    <main>
+
+        <!--------------------- catagory -->
+        <section>
+
+            <!-- menu -->
+          <div>
+            <ul class="flex gap-2 justify-between items-center bg-gray-800 p-5 m-3 rounded">
+                <li class="bg-violet-400 text-violet-800 rounded p-1">Home</li>
+                <li hover: >Sports</li>
+                <li>Breaking news</li>
+                <li>Home</li>
+                <li>Sports</li>
+                <li>Breaking news</li>
+                <li>Home</li>
+                <li>Sports</li>
+                <li>Breaking news</li>
+                
+            </ul>
+          </div>
+
+           <!-- search result -->
+          <div class="bg-gray-800 m-3 rounded">
+
+            <h1 class="text-xl mx-4 p-3 font-semibold">0 items found for this Category Entertainment</h1>
+
+          </div>
+
+          <!-- filter and button section -->
+          <div class="mx-5 flex justify-between my-8">
+             <!-- filter section -->
+            <div>
+                <label for="" class="text-xl font-semibold">Sort By View</label>
+                <select class="p-2 px-5 mx-2 text-md rounded">
+                 
+                    <option value="" class="">Default</option>
+                    <option value="" class="">Default</option>
+                    <option value="" class="">Default</option>
+                    
+                  </select>
+            </div>
+
+             <!-- two button -->
+            <div>
+                <button class="btn btn-outline mx-2">Default</button>
+                <button class="btn btn-outline btn-primary">Primary</button>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!----------------- news card section -->
+
+        <section class="mx-5 ">
+
+
+            <div>
+                <div class="card lg:card-side bg-base-300 shadow-xl h-72 p-5">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">New album is released! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, error?</h2>
+                      <p>Click the button to listen on Spotiwhy app. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, corporis ratione eaque voluptatum accusantium culpa ut nemo sequi inventore quisquam!</p>
+                      <p>Clcorporis ratione eaque voluptatum accusantium culpa Lorem ipsum dolor sit. ut nemo sequi inventore quisquam!</p>
+                      <div class="card-actions justify-between  items-center">
+                        <div class="bg-yellow-500 h-12 w-12 rounded-full">
+
+                            <img class="w-full h-full object-cover rounded-full" src="https://images.pexels.com/photos/879474/pexels-photo-879474.jpeg?cs=srgb&dl=pexels-dax-aslaliya-879474.jpg&fm=jpg" alt="">
+                           
+                        </div>
+
+                        <h1 class="font-semibold">1.5M</h1>
+
+                        <div>
+
+                            <span class="material-symbols-outlined text-yellow-500">   star_rate </span>
+                            <span class="material-symbols-outlined text-yellow-500">   star_rate </span>
+                            <span class="material-symbols-outlined text-yellow-500">   star_rate </span>
+                            <span class="material-symbols-outlined text-yellow-500">   star_rate </span>
+                            <span class="material-symbols-outlined text-yellow-500">  star_rate_half </span>
+                           
+                                
+                           
+                        </div>
+                        <button class="btn btn-primary">More</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+        </section>
+
+        
+
+
+    </main>
+    
+    
+</body>
+</html>
