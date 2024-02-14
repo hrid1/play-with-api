@@ -18,7 +18,7 @@ const loadCountry = region => {
 }
 
 const parentContainer = document.getElementById('country-div');
-// parentContainer.innerHTML = " ";
+//  parentContainer.innerHTML = " ";
 
 
 const displayCountry = data =>{

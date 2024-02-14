@@ -12,10 +12,9 @@ const displayCategory = (data) => {
     const allCategory = data.data.news_category;
    
     const allCategoryDiv = document.getElementById('category-items');
-   
     
     allCategory.forEach(eachCategory => {
-        allCategoryDiv.innerHTML += `<li onclick="loadNewsById('${eachCategory.category_id}')">${eachCategory.category_name}</li>`
+        allCategoryDiv.innerHTML += `<li onclick="loadNewsById('${eachCategory.category_id}','${eachCategory.category_name}')">${eachCategory.category_name}</li>`
         
     });
 
@@ -23,18 +22,20 @@ const displayCategory = (data) => {
 
 
 // load news for each category start
-const loadNewsById = category_id => {
+const loadNewsById = (category_id, category_name) => {
     const url = `https://openapi.programming-hero.com/api/news/category/${category_id}`
     fetch(url)
     .then(res => res.json())
-    .then(data => displayNewsByCategory(data.data))
+    .then(data => displayNewsByCategory(data.data, category_name))
 }
 
-loadNewsById('02')
+// loadNewsById('02')
 
-const displayNewsByCategory = (data) => {
-    // console.log(data);
+const displayNewsByCategory = (data, cate_name) => {
+     console.log(data);
     document.getElementById('total_news').innerText = data.length;
+    document.getElementById('news-category-name').innerText = cate_name;
+
     const all_news_conatainer = document.getElementById('all-news-div');
     all_news_conatainer.innerHTML = '';
     data.forEach(news => {
